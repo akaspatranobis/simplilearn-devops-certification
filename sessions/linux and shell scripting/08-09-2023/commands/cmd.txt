@@ -1,0 +1,62 @@
+44  chmod 777 test.txt 
+   45  ls -ltr
+   46  chmod -r test.txt 
+   47  ls -ltr
+   48  sudo su -
+   49  sudo mkdir new
+   50  ls
+   51  cat /opt/
+   52  cd /opt/
+   53  ls
+   54  cat /etc/*release*
+   55  apt-get update
+   56  sudo apt-get update
+   57  sudo apt-get install git
+   58  clear
+   59  history
+   60  cd -
+   61  ls
+   62  vi test.txt 
+   63  ls -ltr
+   64  chmod +r test.txt 
+   65  vi test.txt 
+   66  cat test.txt 
+   67  vi test.txt 
+   68  cat test.txt 
+   69  vi test.txt 
+   70  cat test.txt 
+   71  vi test.txt 
+   72  ls
+   73  vi myfile.txt 
+   74  ls
+   75  rm myfile.txt 
+   76  ls
+   77  whoami
+78  sudo su -
+   79  id
+   80  ls ltr
+   81  ls -ltr
+   82  chown 30  cd akas/
+   83  ls -ltr
+   84  chown akaspatranobisg:akaspatranobisg new
+   85  sudo chown akaspatranobisg:akaspatranobisg new
+   86  ls -ltr
+   87  ls
+   88  mkdir etstsstststst
+   89  ls 
+   90  rm -rf etstsstststst/
+   91  ls
+   92  id
+   93  sudo adduser bob
+   94  sudo su bob
+   95  sudo addgroup friends
+   96  sudo -g friends bob
+   97  sudo su bob
+   98  sudo -g friends bob
+   99  sudo usermod -g friends bob
+  100  lss /etc/passwd
+  101  less /etc/passwd
+  102  groups
+  106  sudo cat /etc/group
+109  read name
+  110  echo $name

@@ -1,0 +1,4 @@
+jsmith:x:1082:1082:John Smith:/home/jsmith:/bin/bash
+
+jdoe:x:1083:1083:John Doe:/home/jdoe:/bin/bash
+
