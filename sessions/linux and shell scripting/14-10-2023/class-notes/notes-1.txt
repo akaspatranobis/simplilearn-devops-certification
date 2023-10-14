@@ -1,0 +1,201 @@
+R , W, X
+
+chmod 777
+chmod 744
+
++ -- adding a right
+- -- delete a right
+= --- affect a right
+
+
+
+
+Package Managers----
+
+tools that help you install services or softwares in your linux boxes
+
+RHEL - RPM  ( red hat package manager
+YUM
+apt
+
+
+
+curl
+wget
+
+
+SHELL SCRIPTING
+
+Shell - the command line interface that communicates iwth ur Linux OS
+
+Types of Shell
+--------------
+
+sh ,  csh , tcsh,   bash ( bourne  Again Shell )
+
+
+
+echo -- printing or view anything on ur screeen ,
+
+
+Variables
+------------
+
+an object that stores ur data.
+
+10 > 11
+
+110 > or < 1120
+
+a=10
+b=20
+
+a>b
+a<b
+
+
+1. Variable names must start with a letter or underscore  -  a-z,_ ,
+
+2 Number can be used anywhere else
+
+3 DO NOT USE special characters such as @, #, %, $
+
+4 Case sensitive
+
+===================================
+
+Shebang -- First line of any shell scripts
+#!/bin/bash --- bash shell
+#!/bin/tcshh/sh/ksh
+
+Quotations
+-------------
+"acb"/"$myvar" -- the string that is exapnded and the value of myvar is printed.
+'$myvar' -- print $myvar
+`pwd` -- command substitution.
+
+
+
+Read User Inputs ?
+
+read name
+
+
+Arithmetic Operations
+--------------
+Add, substrct multiply , .....
+Add -- +
+Sub --- -
+Addition +
+
+Subtraction -
+
+Multiplication *
+
+Division /
+
+Exponentiation ** (bash only)
+
+Modulo %
+
+
+syntax -- $((opertaion)) or $[]
+
+
+Only for integger numbers
+
+
+What about then decimal or floating number ? 2.1 , ....
+
+"1.1+1.1" | bc
+
+
+Flow Controls
+------------------------
+sequentical  order of commands getting executed if the criteria is justified
+
+1.Conditonals -- if
+2. Loops -- for, while , until
+3. Switches - case, switch
+
+
+Conditonals-----
+if , else
+if [condtional 1]; then
+ some commands
+elif [condtion 2]; then
+ some commands
+else
+ some commands
+fi
+
+
+
+Operators
+Integer Comparison
+--------------------------------
+Operation bash tcsh
+
+equal to if [ 1 -eq 2 ] if (1 == 2)
+
+not equal to if [ $a -ne $b ] if ($a != $b)
+
+greater than if [ $a -gt $b ] if ($a > $b)
+
+greater than or equal to if [ 1 -ge $b ] if (1 >= $b)
+
+less than if [ $a -lt 2 ] if ($a < 2)
+
+less than or equal to if [ $a -le $b ] if ($a <= $b)
+
+String Comparison
+------------------------------
+operation bash tcsh
+
+equal to if [ $a == $b ] if ($a == $b)
+
+not equal to if [ $a != $b ] if ($a != $b)
+
+zero length or null if [ -z $a ] if ($%a == 0)
+
+non zero length if [ -n $a ] if ($%a > 0)
+
+
+
+==========================================
+
+Loops:
+ for syntax
+
+for args in list
+do
+ some commands
+done
+
+while
+
+while [condition]
+do
+ some commands
+done 
+
+
+Factorial of a number if it is an only an even number
+5!
+
+5*4*3*2*1 
+n, n-1 , n-2 , n-3 , .....
+
+Functions
+-------------
+it helps to get rid of repetiting same multiple times 
+
+function function_name {
+    command
+} 
+or
+function () {
+    command
+}
+
+
