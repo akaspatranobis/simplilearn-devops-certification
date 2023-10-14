@@ -38,7 +38,7 @@ sh ,  csh , tcsh,   bash ( bourne  Again Shell )
 echo -- printing or view anything on ur screeen ,
 
 
-Varibles
+Variables
 ------------
 
 an object that stores ur data.
@@ -99,7 +99,7 @@ Exponentiation ** (bash only)
 Modulo %
 
 
-syntax -- $((pertaion)) or $[]
+syntax -- $((opertaion)) or $[]
 
 
 Only for integger numbers
@@ -115,7 +115,7 @@ Flow Controls
 sequentical  order of commands getting executed if the criteria is justified
 
 1.Conditonals -- if
-2. Loops -- for, while
+2. Loops -- for, while , until
 3. Switches - case, switch
 
 
@@ -171,5 +171,31 @@ for args in list
 do
  some commands
 done
+
+while
+
+while [condition]
+do
+ some commands
+done 
+
+
+Factorial of a number if it is an only an even number
+5!
+
+5*4*3*2*1 
+n, n-1 , n-2 , n-3 , .....
+
+Functions
+-------------
+it helps to get rid of repetiting same multiple times 
+
+function function_name {
+    command
+} 
+or
+function () {
+    command
+}
 
 
