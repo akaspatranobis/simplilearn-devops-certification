@@ -1,0 +1,82 @@
+git --version
+ 
+  297  git clone https://github.com/akaspatranobis/my-first-repo.git
+  298  ls
+  299  cd my-first-repo/
+  300  ls
+  301  l
+  302  ls
+  303  git branch
+  304  git branch list
+  305  git checkout my-new-feature
+  306  git branch
+  
+  308  cd ..
+  309  pwd
+  310  ls
+  311  mkdir my-new-cloning-dir
+  312  cd my-new-cloning-dir/
+  313  ls
+336  code .
+  337  ls -ltr
+  338  git remote -v
+  339  gits status
+  340  git status
+  341  git add *
+  342  git status
+  343  git commit -m "updating ReadmE file"
+  344  git push
+  345  cd ..
+  346  ls
+  347  mkdir createnewprojectrepo
+  348  ls
+  349  cd createnewprojectrepo/
+  350  ls
+  351  echo "# my-local-to-remote-repo" >> README.md
+  352  ls
+  353  cat README.md 
+  354  git init
+  355  ls -all
+  356  git status
+  357  git add *
+  358  git status
+  359  git commit -m "first commit"
+  360  git branch -M main
+  361  git branch
+  362  git remote add origin https://github.com/akaspatranobis/my-local-to-remote-repo.git
+  363  git push
+  364  git push -u origin main
+365  git pull
+  366  git branch
+  367  git branch v2-branch
+  368  git branch
+  369  git branch -m v3-branch
+  370  git branch
+  371  git branch -m main
+  372  git branch
+  373  git branch -d v2-branch
+  374  git status
+  375  git branch
+  376  git branch test-1
+  377  git branch
+  378  git checkout -b test-2
+  379  git branch
+  380  git checkout main
+  381  git branch
+  382  git switch test-1
+  383  git tree
+  385  git config --global alias.tree 'log --oneline --graph --decorate --all'
+  386  git tree
+  388  git pull
+  389  git branch
+  390  git checkout main
+  391  git pull origin main
+392  git checkout -b sample_merge_branch
+  393  git branch
+  394  ls
+  395  vi index.txt
+  396  git add *
+  397  git commit -m "new file added to sample branch"
+  398  git checkout main
+  399  git merge sample_merge_branch 
+  400  git push -u origin sample_merge_branch

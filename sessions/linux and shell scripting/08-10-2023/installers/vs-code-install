@@ -1,0 +1,6 @@
+Steps to install VS Code :
+
+1. Go the vs code link - https://code.visualstudio.com/docs/setup/linux
+2. Donwload the Debian Package
+3. From your terminal , go to Downloads
+4. sudo apt install ./name of the package donwloaded

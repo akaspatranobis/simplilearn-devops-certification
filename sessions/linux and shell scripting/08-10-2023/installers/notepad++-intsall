@@ -1,0 +1,4 @@
+Run the below commands to install Notepad++ :
+
+sudo apt install snapd
+sudo snap install notepad-plus-plus
