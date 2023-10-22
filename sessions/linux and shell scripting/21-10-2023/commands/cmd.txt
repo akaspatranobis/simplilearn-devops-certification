@@ -1,0 +1,35 @@
+411  docker --version
+  412  systemctl status docker
+  413  docker pull ubuntu:latest
+  414  docker images
+  415  docker pull nginx
+  416  docker images
+  417  docker run -dt -p 81:81 nginx
+  418  docker ps
+  419  docker stop fe697bfebaae
+  420  docker ps
+  421  docker ps -a
+  422  docker start fe697bfebaae
+  423  docker ps
+  424  docker run -it --name=test-ubuntu-container ubuntu
+  425  docker ps
+  426  docker run --name=test-ubuntu-container ubuntu
+  427  docker ps -a
+  428  docker rm d14550f7d778
+  429  docker rm fe697bfebaae
+  430  docker stop fe697bfebaae
+  431  docker rm fe697bfebaae
+  432  docker ps -a
+  433  docker rmi e4c58958181a
+  434  docker images
+  435  docker run -p 81:81 nginx
+  436  docker --help
+  437  clear
+  438  ls
+  439  mkdir docker
+  
+
+  docker build -t hello-ak:v1.0 .  -- Build docker images with Tags
+ 
+  Example Output ---> REPOSITORY       TAG       IMAGE ID       CREATED        SIZE
+                      hello-ak         v1.0      a741ae628385   29 hours ago   179MB
