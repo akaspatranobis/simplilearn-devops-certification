@@ -1,0 +1,15 @@
+version: '3'       # The version of Docker Compose file format
+
+services:
+  compose-test:
+    image: centos
+    command: /usr/bin/curl compose-db:6379
+    links:
+      - compose-db
+  compose-db:
+    image: redis
+    expose:
+      - "6379"
+
+# docker run --name compose-test imagename(centos) --cmd  --links 
+# docker run --name compose-db redis --port 6379:6379

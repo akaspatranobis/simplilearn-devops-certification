@@ -1,0 +1,18 @@
+version: '3'       # The version of Docker Compose file format
+
+services:
+  service_name (web):       # Name of the service
+    image: image_name:tag     # Docker image to be used
+    ports:
+      - "host_port:container_port"      # Port mapping
+    environment:
+      - KEY=VALUE 
+      - Key1=value1
+      - key 2= value2                  # Environment variables
+    volumes:
+      - /host/path:/container/path           # Volume mapping
+    networks:
+      - network_name             # Networks to connect the service to
+  redis:
+    image:  redis  
+

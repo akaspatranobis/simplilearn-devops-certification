@@ -1,0 +1,64 @@
+  465  pip --version
+  466  sudo pip install docker-compose
+  467  docker-compose
+  468  docker-compose version
+  469  pwd
+  470  touch docker-compose.yml
+  471  ls
+  472  code .
+  473  ls
+  474  sudo docker-compose up
+  475  docker images
+  476  docker ps
+  477  docker ps -a
+  478  ls
+  479  hitsory
+  480  history
+  481  docker
+  482  pwd
+  483  ls
+  484  cd ..
+  485  cd my_wordpress
+  486  mkdir my_wordpress
+  487  cd my_wordpress/
+  488  code .
+  489  ls
+  490  docker-compose up -d
+  491  docker ps
+  492  docker-compose down
+  504  docker exec -it 85fd3469d50c sh
+  505  docker ps 
+  506  docker-compose down
+  507  docker ps 
+  508  docker images
+  509  docker login
+  514  docker tag mariadb:10.6.4-focal apatranobis59/simplilearnimages:10.6.4-focal
+  515  docker images
+  516  docker push apatranobis59/simplilearnimages:10.6.4-focal
+  517  
+  520  docker ps
+  544  docker run -it --name myalpine -d alpine
+  545  ifconfig
+
+  547  docker images
+  548  docker network create exnet
+  549  docker networ ls
+  550  docker network ls
+  551  docker network inspect exnet
+  552  docker run -it --network exnet --name myalpine-new -d alpine
+       sudo docker exec -it --user root myalpine /bin/sh
+       docker network connect exnet myalpine
+       docker network disconnect exnet myalpine
+
+------------------------
+Create a container on default network and attach a secondary network to it.
+
+1. sudo docker run -it --name myalpine -d alpine
+2. Go inside the container
+3. sudo docker exec -it myalpine /bin/sh
+4. Check the ip of the container
+5. ifconfig
+6. cat /etc/hosts
+7. Attach a secondary network to the container
+8. docker network connect exnet myalpine
+9. Once again check the ip of the container , now u would see the containerhas 2 ip address.
