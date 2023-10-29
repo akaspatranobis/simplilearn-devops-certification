@@ -1,0 +1,32 @@
+#EXPLANATION ONE. 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: netflix
+    mode: frontend
+    team: Netflix-Frontend Team
+spec:
+  selector:
+    matchLabels:
+      app = netflix
+      app in (netflix, flipkart)
+      mode != backend
+      mode  notin (backend , middleware)
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+  - name: centos
+    image: centos
+    ports:
+    command:
+  - name:     
+
+
+
+
+
+#v1-alpha , v1-beta , v1    
