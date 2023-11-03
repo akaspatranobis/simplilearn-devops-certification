@@ -1,0 +1,9 @@
+Project Agenda: As a DevOps engineer, you are required to containerize the legacy application system using Docker.
+
+Description: Your team has been asked to sync the Django application and the database so that the information can be stored and accessed again, on demand. This is a legacy application with two components: a Django application and a Postgres database. Now, your project manager asks you to containerize the legacy system using Docker. So, you are required to create Docker images for these components using the Dockerfile and connect them using the docker-compose file.
+
+Tools required: Docker
+
+Pre-requisites: You must have installed all the required tools and should have a working Docker setup in order to proceed. In case you do not have it please refer to Lesson 08 Demo 1 to install and setup Docker..
+
+Expected Deliverables:  The information processed through the application must be stored and accessed, on demand.

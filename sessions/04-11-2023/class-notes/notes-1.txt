@@ -1,0 +1,41 @@
+Install Kubernetes
+---------------------------------
+
+sudo su
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+sudo echo deb http://apt.kubernetes.io/ kubernetes-xenial main > /etc/apt/sources.list.d/kubernetes.list
+
+sudo apt-get update
+sudo apt install docker.io kubectl=1.20.5-00 kubeadm=1.20.5-00 kubelet=1.20.5-00
+
+
+Creaing our first Kubernetes Cluster
+--------------------------------------------
+sudo apt-get update
+
+mkdir kubernetes
+cd kubernetes
+
+
+sudo kubeadm init --config kubeadm-config.yaml
+
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+  kubectl get nodes
+
+  kubectl get pods -n kube-system
+
+
+  kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
+
+
+  kubectl run vsparkz --image nginx
+
+  kubectl taint nodes --all node-role.kubernetes.io/master-
+  
