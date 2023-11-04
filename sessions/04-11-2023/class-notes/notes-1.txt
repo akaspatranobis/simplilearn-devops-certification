@@ -16,26 +16,50 @@ sudo apt-get update
 mkdir kubernetes
 cd kubernetes
 
+Create the kubeadm-config.yaml file.
+----------------------------------------------
+
+Create the  Kubernetes Cluster by running the command below.
+------------------------------------------------------------------------
 
 sudo kubeadm init --config kubeadm-config.yaml
 
 
 To start using your cluster, you need to run the following as a regular user:
+-----------------------------------------------------------------------
 
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
+  Check the nodes post Kubernetes Cluster installation
+  --------------------------------------------------------------
+
   kubectl get nodes
 
   kubectl get pods -n kube-system
 
+ Install the Network Plugin to support CoreDNS issues.
+ --------------------------------------------------------------------
+ Network Driver/Plugin
 
   kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 
 
-
+  Deploy your first podname
+  ---------------------------------------------
   kubectl run vsparkz --image nginx
 
+  kubectl logs -f podname
+
+  Untaint the Master Node to support Pods Deployment
+  ----------------------------------------------------------------
+
   kubectl taint nodes --all node-role.kubernetes.io/master-
+
+
+  Reseting or delete the entire cluster----------
+  ------------------------------------
+
+  sudo kubeadm reset
   
