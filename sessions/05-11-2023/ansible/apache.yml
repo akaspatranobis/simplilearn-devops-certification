@@ -1,0 +1,21 @@
+---
+
+- hosts: webservers
+
+  become: true
+
+  tasks:
+
+    - name: Install apache
+      apt: name=apache2 update_cache=no state=latest
+
+    - name: enabling the apache webservers
+      apache2_module: name=rewrite state=present
+      notify:                # Ansible Handler
+         - restart apache2
+
+  handlers:    
+      - name: restart apache2
+        service: name=apache2 state=restarted
+ 
+      

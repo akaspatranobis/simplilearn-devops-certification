@@ -1,0 +1,14 @@
+---
+# tasks file for demor
+- name: copy demor file
+  template:
+     src: templates/demor.j2
+     dest: /etc/demor
+     owner: root
+     group: root
+     mode: 0444
+
+#sudo cp templates/demor.j2 /etc/demor   
+#sudo chown root:root filename
+#chmod -R 777 filename  
+

@@ -1,0 +1,70 @@
+
+
+1. Ansible Handlers
+
+Helps to notify or send message to users who is running the playbook.
+
+- name: install java
+  yum: java
+  notify:
+     - restart java
+
+  copy
+  file
+  replace
+  read_csv
+
+Variables:
+#How to define and reference Variables in Ansible ?????????????
+we can change the values at only one point and it can get affected at 1000 endpoints     
+
+Shell = csh
+
+varibalename: value    -- defining a value
+
+{{varibalename}}
+
+---
+
+- hosts: webservers
+  remote_install_path: /opt/ssh_config
+  become: true
+  tasks:
+   - name: add apt key for nodesource
+     become: true
+     apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+     dest: {{remote_install_path}}    -- Jinja template
+
+
+Conditionals: (if. else)
+
+when: os_family == 'fedora'
+
+
+
+
+Problem
+Apache web server using Ansible playbook
+1.Install Apache web server tool.
+2. Enable the webserver
+
+ 
+Ansible Roles Struture
+--------------------------------
+
+roles/
+    common/               # this hierarchy represents a "role"
+        tasks/            #
+            main.yml      #  <-- tasks file can include smaller files if warranted
+        handlers/         #
+            main.yml      #  <-- handlers file
+        templates/        #  <-- files for use with the template resource
+            ntp.conf.j2   #  <------- templates end in .j2
+        files/            #
+            bar.txt       #  <-- files for use with the copy resource
+            foo.sh        #  <-- script files for use with the script resource
+        vars/             #
+            main.yml      #  <-- variables associated with this role
+
+
+Global Local            
