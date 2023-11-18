@@ -1,0 +1,14 @@
+Jenkins Setup using War File
+--------------------------------------------------
+
+1. Go to https://www.jenkins.io/download/
+2. Donwload the latest Jenkins war file
+3. Stop the Jenkins already running in your lab environment.
+4. systemctl status jenkins
+   systemctl stop jenkins
+5. From your terminal go the folder where your war got downloaded ( cd Downloads)
+6. Run the command -> java -jar jenkins.war --httpPort=9090
+7. Go the chrome browser and hit the url -> http://localhost:9090/
+8. For the first time login use the adminPassword.
+9. Your Jenkins UI is ready.
+

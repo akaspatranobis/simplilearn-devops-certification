@@ -1,0 +1,4 @@
+
+ 1170  sudo systemctl stop jenkins
+ 1171  systemctl status jenkins
+ 1172  java -jar jenkins.war --httpPort=9090

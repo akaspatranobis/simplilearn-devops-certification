@@ -1,0 +1,30 @@
+terraform version
+ 1132  ls
+ 1133  ls -all
+ 1134  terraform init
+ 1135  ls -all
+ 1136  cd .terraform/
+ 1137  ls
+ 1138  cd providers/
+ 1139  ls
+ 1151  cat .terraform
+ 1152  cat .terraform.lock.hcl 
+ 1153  terraform plan
+ 1154  terraform apply
+ 1155  ls
+ 1156  cat main.tf 
+ 1157  ls -all
+ 1158  terraform plan
+ 1159  terraform apply
+ 1160  terraform plan
+ 1161  terraform apply
+ 1162  terraform destroy
+    terraform plan -target="random_pet.bucket_name"
+
+
+------------------------
+Links-:
+
+https://registry.terraform.io/browse/providers
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#example-usage

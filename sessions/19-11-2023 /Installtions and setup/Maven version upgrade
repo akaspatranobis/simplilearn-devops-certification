@@ -1,0 +1,47 @@
+Maven Version Upgrade
+-------------------------------------
+
+These are the steps to install the latest maven version on Ubuntu:
+
+
+1. Go to https://maven.apache.org/download.cgi
+
+2. Download the latest maven binaries ( Take the Binary tar.gz archive file)
+
+3. Untar the archive file and extract it in the /opt directory
+   
+   tar -xvf apache-maven-3.9.5-bin.tar.gz
+    mv apache-maven-3.9.5 /opt/
+
+4. Create a sym-link that will point to the Maven installation directory  
+
+    sudo ln -s /opt/apache-maven-3.9.5 /opt/maven
+
+5. Set up the environment variables
+
+    a. Open /etc/profile.d/maven.sh
+
+        sudo nano /etc/profile.d/maven.sh
+
+    b. Edit the file by adding the following to it:
+
+        export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+        export M2_HOME=/opt/maven
+
+        export MAVEN_HOME=/opt/maven
+
+        export PATH=${M2_HOME}/bin:${PATH}
+
+
+    c. Save it ( ctrl + X)
+
+    d. sudo chmod +x /etc/profile.d/maven.sh
+
+6. Load the Env variables and use it without restarting the terminal
+
+   source /etc/profile.d/maven.sh
+
+7. Version Check
+
+   mvn -v   
